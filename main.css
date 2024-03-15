@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-page {
+  background: url(./Imagens/pattern_waves.png), url(./Imagens/background.png);
+  background-repeat: repeat-x, no-repeat;
+  background-size: 100px, cover;
+}
+
+.intro-page {
+  max-width: 1920px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: none, blur(3px);
+}
+
+nav a {
+  font-family: "Cinzel", serif;
+  font-size: 60px;
+  color: #000;
+  text-decoration: none;
+  text-shadow: 5px 2px 2px rgba(254, 195, 0, 0.568);
+}
+
+.logo {
+  max-width: 600px;
+  width: 50%;
+  margin: 50px 80px; /* top right bottom left */
+}
+
+div p {
+  text-align: justify;
+  margin-bottom: 24px;
+}
+
+section h1 {
+  margin-bottom: 8px;
+}
+
+section {
+  padding: 50px;
+}
+
+section .container {
+  display: flex;
+}
+
+section img {
+  margin-right: 18px;
+}
+
+header .container,
+section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container img {
+  height: 500px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 600px;
+  margin: 0 8px 8px 0;
+  padding: 8px;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+form textarea {
+  resize: none;
+  height: 180px;
+}
+
+input:focus,
+textarea:focus {
+  outline-width: 2px;
+  outline-color: #fec300;
+  outline-style: outset;
+  background-color: #0000003f;
+}
+
+section#contact {
+  background-color: rgba(38, 48, 61, 0.2);
+}
+
+div .contact-methods {
+  display: flex;
+}
+
+section .contact-methods h3 {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+#local {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+form button {
+  background-color: #000000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: #000000;
+  background-color: #fec300;
+}
+
+footer {
+  padding: 5px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fec300;
+  text-align: right;
+}
