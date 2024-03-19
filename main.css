@@ -18,14 +18,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: none, blur(3px);
 }
 
-nav a {
+.intro-page a {
+  text-decoration: none;
+  color: #000;
   font-family: "Cinzel", serif;
   font-size: 60px;
-  color: #000;
-  text-decoration: none;
   text-shadow: 5px 2px 2px rgba(254, 195, 0, 0.568);
 }
 
@@ -35,43 +34,52 @@ nav a {
   margin: 50px 80px; /* top right bottom left */
 }
 
-div p {
-  text-align: justify;
-  margin-bottom: 24px;
-}
-
-section h1 {
-  margin-bottom: 8px;
-}
-
-section {
-  padding: 50px;
-}
-
-section .container {
-  display: flex;
-}
-
-section img {
-  margin-right: 18px;
-}
-
-header .container,
-section .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.container img {
-  height: 500px;
+/* ajustando o tamanho da imagem do restaurante */
+.img-restaurant {
+  max-width: 800px;
+  width: 600px;
+  margin-right: 10px;
 }
 
 .container {
   max-width: 1280px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
 }
+
+section {
+  padding: 80px 0 80px 0;
+}
+
+section#about {
+  text-align: justify;
+}
+
+section#about h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+section#contact {
+  background-color: rgba(38, 48, 61, 0.2);
+  text-align: right;
+}
+
+section#contact .container {
+    display: flex;
+    align-items: end;
+}
+
+section#contact h3 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* estilizando formulario */
 
 form input,
 form textarea,
@@ -98,26 +106,6 @@ textarea:focus {
   background-color: #0000003f;
 }
 
-section#contact {
-  background-color: rgba(38, 48, 61, 0.2);
-}
-
-div .contact-methods {
-  display: flex;
-}
-
-section .contact-methods h3 {
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-#local {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-
 form button {
   background-color: #000000;
   color: #fff;
@@ -132,10 +120,16 @@ form button:hover {
 }
 
 footer {
-  padding: 5px;
+  height: 30px;
   color: #000;
   font-size: 20px;
   font-weight: bold;
   background-color: #fec300;
+}
+
+footer p {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
   text-align: right;
 }
